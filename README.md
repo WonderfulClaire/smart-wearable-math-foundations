@@ -1,71 +1,193 @@
+<div align="center">
+
 # 智能穿戴设备的数学基础
 
-> 不把数学停留在定理和习题里：每个知识点都要回答，它能解决阵列信号处理、音频算法或机器学习中的什么真实问题？
+**不把数学停留在定理和习题里 —— 每一个公式，都对应一个真实的工程问题。**
 
-这个仓库面向希望进入智能耳机、智能眼镜、手表、手环、助听设备和多传感器终端算法领域的学习者。第一阶段只做四门基础课：**矩阵分析、随机过程、凸优化、统计学习理论**。
+*From matrix analysis to statistical learning theory, connected to real-world audio algorithms, array signal processing, and wearable device engineering.*
 
-## 这个仓库有什么不同
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)](https://numpy.org/)
+[![License](https://img.shields.io/github/license/WonderfulClaire/smart-wearable-math-foundations?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
+[![GitHub Stars](https://img.shields.io/github/stars/WonderfulClaire/smart-wearable-math-foundations?style=social)](https://github.com/WonderfulClaire/smart-wearable-math-foundations/stargazers)
 
-每篇笔记固定包含六部分：
+**简体中文** · [English](README_en.md)
 
-1. **工程问题**：先给一个来自穿戴设备的真实任务。
-2. **数学对象**：说明公式里的量在设备上分别是什么。
-3. **核心推导**：只推对理解算法真正必要的部分。
-4. **数值实验**：用可运行的小实验验证结论。
-5. **工程陷阱**：指出理想假设在真实传感器上如何失效。
-6. **迁移问题**：把同一知识迁移到音频、阵列或机器学习场景。
+[四门课与真实任务](#-四门课与真实任务) · [六部分框架](#-六部分笔记框架) · [快速开始](#-快速开始) · [学习路线](#-推荐学习路线) · [贡献指南](CONTRIBUTING.md)
 
-## 四门课与真实任务
+</div>
+
+---
+
+## 💡 为什么做这个仓库？
+
+你是不是也有这种感觉：
+
+> 矩阵分析、随机过程、凸优化……课都学过，定理也背过，
+> 但一看到音频算法、阵列信号处理的论文，还是一脸懵——
+> **这些公式到底对应设备里的哪一块？理想假设在真实传感器上为什么会失效？**
+
+市面上的数学教材讲定理，工程论文讲结论，中间缺了一座桥。
+
+**这个仓库就是那座桥。**
+
+面向希望进入**智能耳机、智能眼镜、手表、手环、助听设备、多传感器终端算法**领域的学习者，把四门核心数学课——**矩阵分析、随机过程、凸优化、统计学习理论**——重新讲一遍，但每一个知识点都从一个真实的工程问题出发。
+
+---
+
+## ✨ 核心特色
+
+### 🎯 从工程问题出发，不是从定理出发
+每一章开头先抛一个真实问题（"多麦克风信号怎样联合表示？噪声能量怎样度量？"），然后再引入数学工具。学完立刻知道"这个公式能解决什么问题"。
+
+### 🧩 六部分标准化笔记框架
+每篇笔记固定包含六个部分，形成完整闭环——见下方框架图。
+
+### 🔬 可运行的数值实验
+`examples/` 下四个最小实验，**仅依赖 NumPy**，直接 `python` 跑就能看到诊断数字（条件数、噪声功率、跨用户准确率落差等），改参数、看效果、建立直觉。
+
+### 🌉 跨领域迁移
+同一个数学概念，在阵列信号、音频算法、机器学习里怎么用——打通来看，理解更深刻。
+
+---
+
+## 📚 四门课与真实任务
 
 | 数学主线 | 典型知识点 | 穿戴设备中的问题 | 对应算法 |
-|---|---|---|---|
-| [矩阵分析](./01-矩阵分析/README.md) | 复数向量、Hermitian 矩阵、二次型、特征分解、SVD | 多麦克风信号怎样联合表示？噪声能量怎样度量？ | SCM、MVDR、PCA、低秩压缩 |
-| [随机过程](./02-随机过程/README.md) | 平稳性、自相关、PSD、随机状态空间 | 运动伪影和环境噪声为什么随时间变化？ | 谱估计、Wiener 滤波、Kalman 滤波 |
-| [凸优化](./03-凸优化/README.md) | 凸集、拉格朗日乘子、KKT、正则化 | 怎样在保真、降噪、功耗之间求可解释的最优解？ | MVDR、最小二乘、稀疏恢复、传感器标定 |
-| [统计学习理论](./04-统计学习理论/README.md) | 泛化、偏差—方差、正则化、分布偏移 | 离线准确率很高，为什么换用户或换佩戴位置就失效？ | 活动识别、健康指标估计、跨设备评测 |
+|:--------:|-----------|-----------------|----------|
+| [**矩阵分析**](01-矩阵分析/README.md) | 复数向量、Hermitian 矩阵、二次型、特征分解、SVD | 多麦克风信号怎样联合表示？噪声能量怎样度量？ | SCM、MVDR、PCA、低秩压缩 |
+| [**随机过程**](02-随机过程/README.md) | 平稳性、自相关、PSD、随机状态空间 | 运动伪影和环境噪声为什么随时间变化？ | 谱估计、Wiener 滤波、Kalman 滤波 |
+| [**凸优化**](03-凸优化/README.md) | 凸集、拉格朗日乘子、KKT、正则化 | 怎样在保真、降噪、功耗之间求可解释的最优解？ | MVDR、最小二乘、稀疏恢复、传感器标定 |
+| [**统计学习理论**](04-统计学习理论/README.md) | 泛化、偏差—方差、正则化、分布偏移 | 离线准确率很高，为什么换用户或换佩戴位置就失效？ | 活动识别、健康指标估计、跨设备评测 |
 
-## 推荐路线
+---
 
-- 第 1–2 周：矩阵分析。目标是看懂协方差矩阵、二次型和 MVDR。
-- 第 3–4 周：随机过程。目标是理解 PSD、局部平稳和传感器噪声建模。
-- 第 5 周：凸优化。目标是能从工程约束写出目标函数，并推导一个闭式解。
-- 第 6 周：统计学习理论。目标是能设计跨用户、跨设备、跨场景的可信评测。
-- 第 7–8 周：完成四个小实验，并写一篇贯通四门课的项目复盘。
+## 🔬 六部分笔记框架
 
-更细的顺序见 [学习路线](./docs/学习路线.md)。
+以「协方差矩阵与 MVDR」为例：
 
-## 快速开始
+```
+┌─────────────────────────────────────────────────────┐
+│  1. 工程问题：多麦克风降噪怎样最优抑制干扰方向？        │
+├─────────────────────────────────────────────────────┤
+│  2. 数学对象：R = E[xxᴴ] 是什么物理意义？              │
+│     x —— 麦克风阵列接收向量                            │
+│     R —— 空间协方差矩阵，刻画能量分布                   │
+├─────────────────────────────────────────────────────┤
+│  3. 核心推导：MVDR 最优权向量 w = R⁻¹a / aᴴR⁻¹a       │
+│     从约束优化 → 拉格朗日 → KKT 条件，一步步推          │
+├─────────────────────────────────────────────────────┤
+│  4. 数值实验：跑 examples/01，看对角加载前后条件数、     │
+│     目标方向增益、输出噪声功率如何变化                  │
+├─────────────────────────────────────────────────────┤
+│  5. 工程陷阱：                                        │
+│     • 有限快拍数导致 R 估计有误差                       │
+│     • 麦克风失配让零陷偏移                             │
+│     • 低信噪比下 R 病态，求逆数值不稳定                 │
+├─────────────────────────────────────────────────────┤
+│  6. 迁移问题：                                        │
+│     • 音频：多通道降噪的权值求解                       │
+│     • 机器学习：马氏距离与白化                         │
+│     • 通信：阵列天线的波束赋形                         │
+└─────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🚀 快速开始
+
+### 环境要求
+- Python 3.10+
+- NumPy（`examples/` 仅需 NumPy）
+
+### 三步跑通第一个实验
 
 ```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
+# 1. 克隆仓库
+git clone https://github.com/WonderfulClaire/smart-wearable-math-foundations.git
+cd smart-wearable-math-foundations
+
+# 2. 安装依赖
 pip install -r requirements.txt
 
+# 3. 运行第一个实验：协方差与 MVDR（对角加载稳定化）
 python examples/01_covariance_and_mvdr.py
-python examples/02_psd_estimation.py
-python examples/03_regularized_sensor_fusion.py
-python examples/04_domain_shift_evaluation.py
 ```
 
-## 仓库结构
+会打印协方差特征值、对角加载前后的条件数、目标方向增益与输出噪声功率对比。
 
-```text
-.
-├── 01-矩阵分析/
-├── 02-随机过程/
-├── 03-凸优化/
-├── 04-统计学习理论/
-├── examples/            # 四个最小可运行实验
-├── docs/                # 学习路线与写作规范
-└── requirements.txt
+### 运行全部四个实验
+```bash
+python examples/01_covariance_and_mvdr.py      # 矩阵分析：协方差与 MVDR
+python examples/02_psd_estimation.py           # 随机过程：周期图 vs Welch 谱估计
+python examples/03_regularized_sensor_fusion.py # 凸优化：L2 正则化传感器融合
+python examples/04_domain_shift_evaluation.py  # 统计学习：随机切分 vs 按用户留出
 ```
 
-## 贡献原则
+---
 
-这个仓库欢迎补充知识点、推导、图解和实验，但不接受只有定义、没有工程问题的孤立笔记。请先阅读 [贡献指南](./CONTRIBUTING.md) 和 [笔记模板](./docs/笔记模板.md)。
+## 📁 项目结构
 
-## License
+```
+smart-wearable-math-foundations/
+├── 01-矩阵分析/              # 矩阵分析笔记
+├── 02-随机过程/              # 随机过程笔记
+├── 03-凸优化/                # 凸优化笔记
+├── 04-统计学习理论/          # 统计学习理论笔记
+├── examples/                # 四个最小可运行实验（仅需 NumPy）
+│   ├── 01_covariance_and_mvdr.py
+│   ├── 02_psd_estimation.py
+│   ├── 03_regularized_sensor_fusion.py
+│   └── 04_domain_shift_evaluation.py
+├── docs/                    # 学习路线与笔记模板
+│   ├── 学习路线.md
+│   └── 笔记模板.md
+├── requirements.txt         # 依赖清单
+├── CONTRIBUTING.md          # 贡献指南
+├── LICENSE                  # MIT 许可证
+└── README.md                # 你正在看的文件
+```
 
-内容与代码采用 [MIT License](./LICENSE)。引用本仓库时，建议同时保留原始论文、教材或官方文档的出处。
+---
 
+## 🛤️ 推荐学习路线
+
+- **第 1–2 周：矩阵分析** —— 看懂协方差矩阵、二次型和 MVDR。
+- **第 3–4 周：随机过程** —— 理解 PSD、局部平稳和传感器噪声建模。
+- **第 5 周：凸优化** —— 能从工程约束写出目标函数，并推导一个闭式解。
+- **第 6 周：统计学习理论** —— 能设计跨用户、跨设备、跨场景的可信评测。
+- **第 7–8 周：项目复盘** —— 完成四个小实验，写一篇贯通四门课的复盘。
+
+更细的顺序见 [docs/学习路线.md](docs/学习路线.md)。
+
+---
+
+## 🎯 适合谁？
+
+- **想入行智能穿戴算法的学生**：系统建立数学 → 工程的连接
+- **音频 / 阵列信号工程师**：补数学基础，理解算法底层原理
+- **机器学习工程师转 wearable 方向**：快速建立信号处理直觉
+- **对智能眼镜、耳机算法好奇的开发者**：从零开始的入门路径
+
+---
+
+## 🤝 贡献
+
+欢迎补充知识点、推导、图解和实验——但不接受只有定义、没有工程问题的孤立笔记。请先读 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [docs/笔记模板.md](docs/笔记模板.md)。
+
+<a href="https://github.com/WonderfulClaire/smart-wearable-math-foundations/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=WonderfulClaire/smart-wearable-math-foundations" />
+</a>
+
+---
+
+## 📄 许可证
+
+内容与代码采用 [MIT License](LICENSE)。引用本仓库时，建议同时保留原始论文、教材或官方文档的出处。
+
+<div align="center">
+
+**如果这个仓库对你有帮助，点个 ⭐ Star 支持一下吧！**
+
+</div>
