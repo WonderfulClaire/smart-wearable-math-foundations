@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 740" width="680" height="740">
+  <defs>
+    <linearGradient id="bgLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="bgDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="lineBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="linePurple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowDark" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .bg { fill: url(#bgLight); }
+      .card { fill: #ffffff; stroke: #e2e8f0; }
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-weight: 700; }
+      .body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+      .muted { fill: #475569; }
+      .accent { fill: #1e40af; }
+      .number { fill: #ffffff; font-weight: 700; }
+      .connector { stroke: #cbd5e1; fill: none; stroke-dasharray: 4 3; }
+      .arrow { fill: #94a3b8; }
+      .caption { fill: #64748b; }
+      .badge-1 { fill: url(#lineBlue); }
+      .badge-2 { fill: #0ea5e9; }
+      .badge-3 { fill: #6366f1; }
+      .badge-4 { fill: #8b5cf6; }
+      .badge-5 { fill: #ec4899; }
+      .badge-6 { fill: url(#linePurple); }
+      .bullet { fill: #3b82f6; }
+
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: url(#bgDark); }
+        .card { fill: #1e293b; stroke: #334155; }
+        .title { fill: #f1f5f9; }
+        .body { fill: #cbd5e1; }
+        .muted { fill: #94a3b8; }
+        .accent { fill: #60a5fa; }
+        .connector { stroke: #475569; }
+        .arrow { fill: #94a3b8; }
+        .caption { fill: #94a3b8; }
+        .bullet { fill: #60a5fa; }
+      }
+    </style>
+  </defs>
+
+  <rect class="bg" width="680" height="740" rx="10"/>
+
+  <text x="340" y="42" text-anchor="middle" class="title" font-size="20" fill="#0f172a">六部分笔记框架</text>
+  <text x="340" y="66" text-anchor="middle" class="caption" font-size="11">以「协方差矩阵与 MVDR」为例</text>
+
+  <g transform="translate(45, 88)">
+    <rect class="card" x="0" y="0" width="590" height="82" rx="10" filter="url(#shadow)"/>
+    <circle class="badge-1" cx="35" cy="41" r="20"/>
+    <text x="35" y="46" text-anchor="middle" class="number" font-size="14">1</text>
+    <text x="68" y="26" class="title accent" font-size="13">工程问题</text>
+    <text x="68" y="48" class="body muted" font-size="12">多麦克风降噪怎样最优抑制干扰方向？</text>
+    <text x="68" y="68" class="body" font-size="10" fill="#64748b">从真实设备场景出发，明确要解决的工程目标。</text>
+  </g>
+
+  <path class="connector" d="M340,170 L340,184" stroke-width="2"/>
+  <polygon class="arrow" points="340,192 335,183 345,183"/>
+
+  <g transform="translate(45, 196)">
+    <rect class="card" x="0" y="0" width="590" height="96" rx="10" filter="url(#shadow)"/>
+    <circle class="badge-2" cx="35" cy="48" r="20"/>
+    <text x="35" y="53" text-anchor="middle" class="number" font-size="14">2</text>
+    <text x="68" y="26" class="title accent" font-size="13">数学对象</text>
+    <text x="68" y="48" class="body muted" font-size="12" font-style="italic">R = E[xx<tspan dy="-4" font-size="9">H</tspan><tspan dy="4">]</tspan> 是什么物理意义？</text>
+    <text x="68" y="68" class="body" font-size="11">x —— 麦克风阵列接收向量</text>
+    <text x="68" y="84" class="body" font-size="11">R —— 空间协方差矩阵，刻画能量分布</text>
+  </g>
+
+  <path class="connector" d="M340,292 L340,306" stroke-width="2"/>
+  <polygon class="arrow" points="340,314 335,305 345,305"/>
+
+  <g transform="translate(45, 318)">
+    <rect class="card" x="0" y="0" width="590" height="96" rx="10" filter="url(#shadow)"/>
+    <circle class="badge-3" cx="35" cy="48" r="20"/>
+    <text x="35" y="53" text-anchor="middle" class="number" font-size="14">3</text>
+    <text x="68" y="26" class="title accent" font-size="13">核心推导</text>
+    <text x="68" y="48" class="body muted" font-size="12" font-style="italic">MVDR 最优权向量 w = R<tspan dy="-4" font-size="9">-1</tspan><tspan dy="4">a / a</tspan><tspan dy="-4" font-size="9">H</tspan><tspan dy="4">R</tspan><tspan dy="-4" font-size="9">-1</tspan><tspan dy="4">a</tspan></text>
+    <text x="68" y="68" class="body" font-size="11">从约束优化 → 拉格朗日函数 → KKT 条件，</text>
+    <text x="68" y="84" class="body" font-size="11">一步步推出闭式解。</text>
+  </g>
+
+  <path class="connector" d="M340,414 L340,428" stroke-width="2"/>
+  <polygon class="arrow" points="340,436 335,427 345,427"/>
+
+  <g transform="translate(45, 440)">
+    <rect class="card" x="0" y="0" width="590" height="82" rx="10" filter="url(#shadow)"/>
+    <circle class="badge-4" cx="35" cy="41" r="20"/>
+    <text x="35" y="46" text-anchor="middle" class="number" font-size="14">4</text>
+    <text x="68" y="26" class="title accent" font-size="13">数值实验</text>
+    <text x="68" y="48" class="body muted" font-size="12">跑 examples/01，看对角加载前后条件数、</text>
+    <text x="68" y="66" class="body muted" font-size="12">目标方向增益、输出噪声功率如何变化。</text>
+  </g>
+
+  <path class="connector" d="M340,522 L340,536" stroke-width="2"/>
+  <polygon class="arrow" points="340,544 335,535 345,535"/>
+
+  <g transform="translate(45, 548)">
+    <rect class="card" x="0" y="0" width="590" height="86" rx="10" filter="url(#shadow)"/>
+    <circle class="badge-5" cx="35" cy="43" r="20"/>
+    <text x="35" y="48" text-anchor="middle" class="number" font-size="14">5</text>
+    <text x="68" y="26" class="title accent" font-size="13">工程陷阱</text>
+    <circle class="bullet" cx="75" cy="44" r="2.5"/>
+    <text x="83" y="47" class="body" font-size="11">有限快拍数导致 R 估计有误差</text>
+    <circle class="bullet" cx="75" cy="62" r="2.5"/>
+    <text x="83" y="65" class="body" font-size="11">麦克风失配让零陷偏移</text>
+    <circle class="bullet" cx="310" cy="44" r="2.5"/>
+    <text x="318" y="47" class="body" font-size="11">低信噪比下 R 病态，求逆数值不稳定</text>
+  </g>
+
+  <path class="connector" d="M340,634 L340,648" stroke-width="2"/>
+  <polygon class="arrow" points="340,656 335,647 345,647"/>
+
+  <g transform="translate(45, 662)">
+    <rect class="card" x="0" y="0" width="590" height="58" rx="10" filter="url(#shadow)"/>
+    <circle class="badge-6" cx="35" cy="29" r="20"/>
+    <text x="35" y="34" text-anchor="middle" class="number" font-size="14">6</text>
+    <text x="68" y="22" class="title accent" font-size="13">迁移问题</text>
+    <text x="68" y="42" class="body" font-size="11">音频：多通道降噪 · 机器学习：马氏距离与白化 · 通信：阵列天线波束赋形</text>
+  </g>
+</svg>
