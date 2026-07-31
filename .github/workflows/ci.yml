@@ -1,3 +1,4 @@
+
 name: CI
 
 on:
@@ -37,3 +38,4 @@ jobs:
           python examples/02_psd_estimation.py
           python examples/03_regularized_sensor_fusion.py
           python examples/04_domain_shift_evaluation.py
+          python examples/05_low_rank_denoising.py

@@ -1,6 +1,14 @@
+
 # 02 随机过程
 
 传感器输出不是一条确定曲线，而是“信号规律 + 随机扰动”的一次实现。随机过程帮助我们描述噪声怎样随时间变化、不同时间点怎样相关，以及能量怎样分布在频率上。
+
+## 学习单元
+
+| 单元 | 你将解决的问题 | 状态 |
+|---|---|:---:|
+| [平稳性、自相关与 PSD](01-平稳性、自相关与-PSD.md) | 怎样从有限记录估计频率上的功率分布？ | ✅ |
+| 状态空间与 Kalman 滤波 | 怎样从带噪观测追踪不断变化的隐藏状态？ | ⬜ |
 
 ## 知识地图
 
@@ -41,7 +49,7 @@ $$
 
 ## 本章实验
 
-运行 [`examples/02_psd_estimation.py`](../examples/02_psd_estimation.py)，比较单段周期图和 Welch 平均的方差，并观察非平稳噪声下长窗口如何抹掉变化。
+运行 [`examples/02_psd_estimation.py`](https://github.com/WonderfulClaire/smart-wearable-math-foundations/blob/main/examples/02_psd_estimation.py)，比较单段周期图和 Welch 平均的方差，并观察非平稳噪声下长窗口如何抹掉变化。
 
 ## 过关问题
 
