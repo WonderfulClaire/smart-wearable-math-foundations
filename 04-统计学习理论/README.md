@@ -1,3 +1,4 @@
+
 # 04 统计学习理论
 
 穿戴设备最常见的失败不是“训练集没学会”，而是换一个用户、换一种肤色、换一个佩戴松紧、换一台硬件后性能下降。统计学习理论帮助我们区分记忆与泛化，并建立可信的实验设计。
@@ -38,7 +39,7 @@
 
 ## 本章实验
 
-运行 [`examples/04_domain_shift_evaluation.py`](../examples/04_domain_shift_evaluation.py)，比较随机切分与按用户留一法。实验故意加入“用户指纹”，展示随机切分如何产生虚假的高分。
+运行 [`examples/04_domain_shift_evaluation.py`](https://github.com/WonderfulClaire/smart-wearable-math-foundations/blob/main/examples/04_domain_shift_evaluation.py)，比较随机切分与按用户留一法。实验故意加入“用户指纹”，展示随机切分如何产生虚假的高分。
 
 ## 过关问题
 

@@ -1,6 +1,16 @@
+
 # 01 矩阵分析
 
 矩阵分析是多传感器系统的共同语言。麦克风阵列的多个通道、IMU 的三个轴、PPG 的多波长通道，都可以被组织为向量；通道之间的相关性、能量和空间结构则由矩阵描述。
+
+## 学习单元
+
+| 单元 | 你将解决的问题 | 状态 |
+|---|---|:---:|
+| [多通道复数向量与 Hermitian 结构](01-多通道复数向量与-Hermitian-结构.md) | STFT 后为什么要用复数向量？为什么内积必须共轭？ | ✅ |
+| [协方差矩阵、二次型与 MVDR](02-协方差矩阵、二次型与-MVDR.md) | 输出功率怎样写成二次型？病态协方差怎样稳定求解？ | ✅ |
+| [特征分解、SVD 与低秩结构](03-特征分解、SVD-与低秩结构.md) | 怎样分离主要信号子空间和噪声子空间？ | ✅ |
+| 矩阵求导与最小二乘 | 怎样从损失函数推导滤波器和标定参数？ | ⬜ |
 
 ## 知识地图
 
@@ -38,7 +48,7 @@ $$
 
 ## 本章实验
 
-运行 [`examples/01_covariance_and_mvdr.py`](../examples/01_covariance_and_mvdr.py)，观察：
+运行 [`examples/01_covariance_and_mvdr.py`](https://github.com/WonderfulClaire/smart-wearable-math-foundations/blob/main/examples/01_covariance_and_mvdr.py)，观察：
 
 - 协方差矩阵的特征值如何反映噪声主方向；
 - 直接求逆在病态矩阵上为什么不稳定；

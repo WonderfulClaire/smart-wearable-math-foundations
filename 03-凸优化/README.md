@@ -1,3 +1,4 @@
+
 # 03 凸优化
 
 工程算法不是“找一个公式”，而是在目标、约束和资源之间做选择。凸优化提供一种可解释的语言：我们到底在最小化什么，必须满足什么，以及什么时候可以相信得到的是全局最优解。
@@ -34,7 +35,7 @@ $$
 
 ## 本章实验
 
-运行 [`examples/03_regularized_sensor_fusion.py`](../examples/03_regularized_sensor_fusion.py)，观察正则化如何在传感器高度相关、样本较少时稳定权重。
+运行 [`examples/03_regularized_sensor_fusion.py`](https://github.com/WonderfulClaire/smart-wearable-math-foundations/blob/main/examples/03_regularized_sensor_fusion.py)，观察正则化如何在传感器高度相关、样本较少时稳定权重。
 
 ## 过关问题
 
