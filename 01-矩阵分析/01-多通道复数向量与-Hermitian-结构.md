@@ -182,3 +182,9 @@ print("same energy =", np.allclose(np.vdot(x, x), np.vdot(x_rotated, x_rotated))
 1. G. Strang, *Linear Algebra and Learning from Data*, Wellesley-Cambridge Press, 2019.
 2. H. L. Van Trees, *Optimum Array Processing*, Wiley, 2002, Chapters 1–2.
 3. J. Benesty, J. Chen, and Y. Huang, *Microphone Array Signal Processing*, Springer, 2008, Chapters 1–2.
+
+## 推荐视频
+
+- **3Blue1Brown《线性代数的本质》** 『向量究竟是什么』『线性组合·张成的空间与基』『点积与对偶性（内积）』几集——合集 [BV1ys411472E](https://www.bilibili.com/video/BV1ys411472E/)，B站搜“线性代数的本质 点积 对偶”直达。
+- **漫士沉思录《无痛线代》** 复数向量与内积相关单集（B站搜“漫士沉思录 无痛线代 内积 复向量”，[主页](https://space.bilibili.com/266765166)）。
+- **飞天闪客** *从函数到神经网络* 系列里“向量 / 高维空间”相关片段（[BV1NCgVzoEG9](https://www.bilibili.com/video/BV1NCgVzoEG9)），帮助把“向量 = 高维空间中的点”建立几何直觉。
