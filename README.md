@@ -217,3 +217,16 @@ smart-wearable-math-foundations/
 **如果这个仓库对你有帮助，点个 ⭐ Star 支持一下吧！**
 
 </div>
+
+## 📺 配套视频资源（按课程）
+
+每门课在自己的 README 末尾有「推荐视频」小节，已完成的正文章节末尾也有对应知识点的视频。这里给总入口。
+
+| 课程 | 首选 UP 主 / 系列 | 入口 |
+|---|---|---|
+| 矩阵分析 | 3Blue1Brown《线性代数的本质》、漫士沉思录《无痛线代》、飞天闪客 | [3b1b 线代合集 BV1ys411472E](https://www.bilibili.com/video/BV1ys411472E/) · [漫士主页](https://space.bilibili.com/266765166) |
+| 随机过程 | 3Blue1Brown 傅里叶系列、MIT OCW 信号与系统、DSP Guide | [MIT OCW](https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/) · [DSP Guide](https://www.dspguide.com/) |
+| 凸优化 | Stephen Boyd 斯坦福公开课、3Blue1Brown《微积分的本质》、中科大凌青、飞天闪客 | [Boyd 课程主页](https://web.stanford.edu/class/ee364a/) · [3b1b 微积分合集 BV1ob411y7L9](https://www.bilibili.com/video/BV1ob411y7L9/) |
+| 统计学习理论 | StatQuest、3Blue1Brown 神经网络课、CS229、飞天闪客 | [StatQuest](https://statquest.org/video-index/) · [3b1b 神经网络课 BV1BzNLzzExg](https://www.bilibili.com/video/BV1BzNLzzExg/) |
+
+> 作者偏好：本人喜欢 **漫士沉思录、3Blue1Brown、飞天闪客**；凡能对应上的知识点都会优先挂他们的视频，找不到对应单集时用「B站搜 {UP主} {关键词}」兜底，绝不编造 BV 号。
