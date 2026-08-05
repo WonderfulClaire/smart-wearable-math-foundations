@@ -242,3 +242,9 @@ Frobenius 重建误差关注整体能量；低能量但具有判别力的特征�
 2. G. Strang, *Linear Algebra and Learning from Data*, Wellesley-Cambridge Press, 2019, Chapters 1–4.
 3. I. T. Jolliffe and J. Cadima, “Principal component analysis: a review and recent developments,” *Philosophical Transactions of the Royal Society A*, 374, 2016.
 
+
+## 推荐视频
+
+- **3Blue1Brown《线性代数的本质》** 『特征向量与特征值』『抽象向量空间』几集——合集 [BV1ys411472E](https://www.bilibili.com/video/BV1ys411472E/)。
+- **漫士沉思录《无痛线代》** *彻底搞懂 SVD!矩阵究竟怎么就奇异了?* 等 SVD / 特征值单集（B站搜“漫士沉思录 无痛线代 SVD”，[主页](https://space.bilibili.com/266765166)）。
+- **StatQuest** *Principal Component Analysis (PCA)*（[视频索引](https://statquest.org/video-index/)）：用 SVD / 协方差做降维，和本讲“低秩去噪、信号子空间”对应。
