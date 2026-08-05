@@ -58,3 +58,10 @@ $$
 3. 为什么 PSD 估计需要同时报告采样率、窗函数、窗口长度和重叠？
 4. 怎样从 PPG 的运动伪影问题迁移到麦克风的非平稳噪声抑制？
 
+
+## 推荐视频
+
+- **3Blue1Brown《傅里叶变换》系列**（[官网](https://www.3blue1brown.com/topics/fourier-transform)，B站搜“3Blue1Brown 傅里叶”）：从“圆怎样合成波形”讲清频谱，是理解 PSD 的几何直觉来源。
+- **MIT OpenCourseWare《Signals and Systems》**（[课程页](https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/)）：Fourier、滤波、频域系统。
+- **The Scientist and Engineer's Guide to DSP**（[dspguide.com](https://www.dspguide.com/)）：免费图解书，傅里叶、滤波、谱分析查漏补缺。
+- **StatQuest** 概率与统计系列（[视频索引](https://statquest.org/video-index/)）：均值、方差、相关性、MLE 等。
