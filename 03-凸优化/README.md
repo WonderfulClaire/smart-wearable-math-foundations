@@ -44,3 +44,11 @@ $$
 3. L1 与 L2 正则化分别偏好什么样的解？
 4. 当延迟、功耗和精度无法同时最优时，怎样用 Pareto 前沿表达选择？
 
+
+## 推荐视频
+
+- **Stephen Boyd《Convex Optimization》斯坦福公开课**（中文字幕，B站搜“凸优化 Boyd 斯坦福 中文字幕”；[课程主页](https://web.stanford.edu/class/ee364a/)、[教材](https://stanford.edu/~boyd/cvxbook/)）：凸优化圣经级课程，本仓库 MVDR、最小二乘、正则化都对应其中章节。
+- **中科大 凌青《最优化理论》**（B站搜“中科大 凸优化 凌青”）：讲解细致，板书清晰，和 Boyd 书结构一致。
+- **3Blue1Brown《微积分的本质》**（B站官方合集 [BV1ob411y7L9](https://www.bilibili.com/video/BV1ob411y7L9/)）：导数、梯度、泰勒展开的动画直觉，是“梯度下降、Hessian、局部二次近似”的前置。
+- **飞天闪客** *从函数到神经网络* 系列（[BV1NCgVzoEG9](https://www.bilibili.com/video/BV1NCgVzoEG9)）：用“函数在高维空间的地形”视角看优化与损失，适合把凸优化的几何直觉和深度学习打通。
+- **王木头学科学**（B站搜“王木头 KKT 条件 拉格朗日对偶”）：通俗讲 KKT 与对偶。
