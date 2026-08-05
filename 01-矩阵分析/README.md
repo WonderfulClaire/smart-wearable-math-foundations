@@ -62,3 +62,10 @@ $$
 3. 为什么实际代码应优先使用线性方程求解，而不是显式求逆？
 4. LoRA 的低秩更新和阵列信号中的低秩子空间有什么共同数学结构？
 
+
+## 推荐视频
+
+- **3Blue1Brown《线性代数的本质》**（B站官方合集 [BV1ys411472E](https://www.bilibili.com/video/BV1ys411472E/)）：向量、线性变换、行列式、特征值、SVD 的动画直觉，每讲正文都引用了对应集。
+- **漫士沉思录《无痛线代》**（[主页 space.bilibili.com/266765166](https://space.bilibili.com/266765166)）：用“为什么需要这个定义”的动机视角讲线代，列向量/内积/二次型/行列式/SVD 都有对应单集，B站搜“漫士沉思录 无痛线代 {主题}”直达。
+- **飞天闪客**：用几何视角解释高维空间变换与深度学习数学基础，可作“向量空间 → Embedding”的延伸（[《一小时从函数到 Transformer》BV1NCgVzoEG9](https://www.bilibili.com/video/BV1NCgVzoEG9) 为系列入口）。
+- **Gilbert Strang《线性代数》**（MIT OCW）：强调几何理解而非纯推导，配合本仓库 MVDR 主线很顺。
