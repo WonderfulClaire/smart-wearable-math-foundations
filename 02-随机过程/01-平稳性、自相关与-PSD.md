@@ -240,3 +240,10 @@ FFT 幅度、幅度平方、功率谱和功率谱密度的缩放不同。比较�
 2. P. Stoica and R. Moses, *Spectral Analysis of Signals*, Prentice Hall, 2005, Chapters 1–2.
 3. P. D. Welch, “The use of fast Fourier transform for the estimation of power spectra,” *IEEE Transactions on Audio and Electroacoustics*, 15(2), 1967.
 
+
+## 推荐视频
+
+- **3Blue1Brown《傅里叶变换》系列**（B站搜“3Blue1Brown 傅里叶 变换”，[官网](https://www.3blue1brown.com/topics/fourier-transform)）：把“信号 = 不同频率圆的叠加”讲透，是 PSD 的直觉地基。
+- **MIT OCW《Signals and Systems》**（[课程页](https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/)）：Fourier 变换与滤波，和本讲 PSD、窗函数呼应。
+- **The Scientist and Engineer's Guide to DSP**（[dspguide.com](https://www.dspguide.com/)）：DFT、频谱泄漏、加窗，对应本讲“窗函数取舍”与“谱估计偏差—方差”。
+- **StatQuest** *Covariance and Correlation* / *Maximum Likelihood*（[视频索引](https://statquest.org/video-index/)）：自相关本质就是“自己和自己错位相乘的平均”，和协方差一脉相承。
