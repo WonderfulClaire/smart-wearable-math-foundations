@@ -285,3 +285,9 @@ python examples/01_covariance_and_mvdr.py
 2. H. L. Van Trees, *Optimum Array Processing*, Wiley, 2002, Chapters 2 and 6.
 3. J. Benesty, J. Chen, and Y. Huang, *Microphone Array Signal Processing*, Springer, 2008, Chapters 2–3.
 4. G. H. Golub and C. F. Van Loan, *Matrix Computations*, 4th ed., Johns Hopkins University Press, 2013, Chapters 2 and 4.
+
+## 推荐视频
+
+- **3Blue1Brown《线性代数的本质》** 『三维线性变换』『行列式』『基变换』『逆矩阵·列空间·零空间（不可逆 = 压扁）』几集——合集 [BV1ys411472E](https://www.bilibili.com/video/BV1ys411472E/)。
+- **漫士沉思录《无痛线代》** 二次型 / 协方差矩阵 / 行列式 相关单集（B站搜“漫士沉思录 无痛线代 二次型 协方差”，[主页](https://space.bilibili.com/266765166)）。
+- **StatQuest** *Covariance and Correlation*（[视频索引](https://statquest.org/video-index/)）：协方差、方差、相关性的图解，和本讲“协方差矩阵描述空间相关性”直接对应。
