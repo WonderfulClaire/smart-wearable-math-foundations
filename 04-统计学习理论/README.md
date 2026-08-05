@@ -48,3 +48,11 @@
 3. 平均准确率相同的两个模型，为什么产品风险可能完全不同？
 4. 数据增强、正则化和更小模型分别怎样改变偏差与方差？
 
+
+## 推荐视频
+
+- **StatQuest《Machine Learning》**（[视频索引](https://statquest.org/video-index/)）：偏差—方差权衡、交叉验证、正则化、PCA、MLE 全图解，和本门课高度对应。
+- **3Blue1Brown《神经网络》课**（B站官方 [BV1BzNLzzExg](https://www.bilibili.com/video/BV1BzNLzzExg/)）：反向传播、梯度下降的几何直觉，是理解“为什么离线准、换用户就掉”的模型侧基础。
+- **Stanford CS229**（[课程页](https://cs229.stanford.edu/)）：统计学习与优化系统教材。
+- **Distill《The Building Blocks of Interpretability》**（[distill.pub/2018/building-blocks](https://distill.pub/2018/building-blocks/)）：交互式可视化，建立“看懂模型内部表示”的感觉。
+- **飞天闪客** *从函数到神经网络 / 白话 DeepSeek* 系列（[BV1NCgVzoEG9](https://www.bilibili.com/video/BV1NCgVzoEG9)）：从函数到神经网络的本质串讲，帮助把统计学习与深度学习连接。
