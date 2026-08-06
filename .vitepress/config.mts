@@ -2,6 +2,10 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  head: [
+    ['script', { src: 'https://cdn.jsdelivr.net/gh/WonderfulClaire/claire-learning-hub@main/nav.js', defer: true }]
+  ],
+
   lang: 'zh-CN',
   title: '智能穿戴设备的数学基础',
   titleTemplate: ':title · 智能穿戴设备的数学基础',
